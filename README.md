@@ -149,3 +149,12 @@ npm run start:front
 npm run build
 ```
 
+
+
+   Now you have the first app admin:
+   {
+   "login": "first_admin",
+   "password": "AdminPass1"
+   {
+
+   Now you have 5 users "user 1" - "user 5" password "userPassword1"
