@@ -1,0 +1,72 @@
+.shelf{
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+}
+
+.item-qty-container {
+    border: #3b3b3b solid 1px ;
+    border-radius: 5px;
+    display: flex;
+    gap: 8px;
+    padding: 2px 0 2px 0;
+
+}
+
+.item-qty {
+    text-align: center;
+    justify-content: center;
+    width: 30px;
+    height: 20px;
+    background: space;
+    cursor: pointer;
+}
+
+.item-qty.selected {
+    border: 1px solid #007bff;
+    cursor: auto;
+
+}
+
+
+
+.pagination-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    font-family: sans-serif;
+    padding: 10px 0 10px 0;
+}
+
+
+
+.pages {
+    border: #3b3b3b solid 1px ;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.page, .arrow {
+    padding: 0.1rem 0.6rem;
+    background: #191818;
+    cursor: pointer;
+    color: #f8f6f6;
+}
+
+
+.jump-to-page{
+    border: #3b3b3b solid 1px ;
+    border-radius: 5px;
+    padding: 2px 0 2px 0;
+
+}
+.jump-to-page input {
+    width: 50px;
+    padding: 0.2rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+}

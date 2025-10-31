@@ -1,0 +1,140 @@
+/* базовый контейнер и карточка */
+.registration-container {
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+}
+
+.registration-form {
+    width: 360px;
+    background: linear-gradient(145deg, #262626, #1b1b1b);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px #0b0b0b, -2px -2px 8px #333;
+    color: #eee;
+    font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+/* заголовок */
+.h2 {
+    margin: 2px 0 0 1px;
+    text-align: center;
+    color: #fff;
+}
+
+/* каждое поле */
+.field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 6px;
+}
+
+/* подпись к полю */
+.label-text {
+    font-size: 0.85rem;
+    color: #bbb;
+    margin-bottom: 2px;
+}
+
+/* инпуты: базово + валид/невалид */
+.input {
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    background: rgba(255,255,255,0.03);
+    color: #fff;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color .12s, box-shadow .12s, transform .08s;
+}
+
+/* фокус */
+.input:focus {
+    border-color: #5aa8ff;
+    box-shadow: 0 0 8px rgba(90,168,255,0.08);
+    transform: translateY(-1px);
+}
+
+/* валид/невалид — стили, которые управляются браузером благодаря атрибутам */
+.input:invalid {
+    border-color: #e05a5a;
+    box-shadow: 0 0 6px rgba(224,90,90,0.08);
+}
+
+.input:valid {
+    border-color: #5aa870;
+}
+
+/* текст ошибки под полем (мы показываем по touched, можно улучшить) */
+.error {
+    height: 12px;
+    color: #ffb3b3;
+    font-size: 0.8rem;
+}
+
+/* серверные ошибки */
+.server-error {
+    padding: 8px;
+    margin-bottom: 8px;
+    background: rgba(224,90,90,0.08);
+    color: #ffb3b3;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+/* кнопки */
+.actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 6px;
+}
+
+
+.btn {
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    background: rgba(255,255,255,0.03);
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    transition: transform 0.08s, box-shadow 0.2s, background 0.2s;
+}
+.btn:hover {
+    background: rgba(255,255,255,0.06);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.35);
+}
+.btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+}
+
+
+.password-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.password-wrapper .input {
+    width: 100%;
+    padding-right: 2.5rem; /* место для глазика */
+    box-sizing: border-box;
+}
+
+.toggle-visibility {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.toggle-visibility:focus {
+    outline: none;
+}

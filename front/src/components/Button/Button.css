@@ -1,0 +1,18 @@
+.clean-all {
+    padding: 0.2rem 0.55rem 0.30rem 0.50rem;
+    border-radius: 6px;
+    border: none;
+    background: linear-gradient(145deg, #3b3b3b, #222);
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.85rem;
+    box-shadow: 2px 2px 4px #111, -2px -2px 4px #444;
+    transition: all 0.1s ease-in-out;
+    min-width: 40px;
+}
+
+/*.clean-all:focus,*/
+.clean-all:focus {
+    outline: 2px solid #1a1a1a; /* серый ободок при фокусе */
+    outline-offset: 2px; /* отступ, чтобы не налезал */
+}

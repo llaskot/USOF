@@ -1,0 +1,89 @@
+
+
+.profilePage {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+    font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+    color: #eee;
+}
+
+.profileLeft {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.profileRight {
+    max-width: 180px; /* ограничиваем ширину колонки с фото */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.profile-picture {
+    width: 100%;       /* фото занимает всю ширину контейнера */
+    max-width: 160px;  /* но не больше 160px */
+    height: auto;      /* сохраняем пропорции */
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profileRight {
+    max-width: 250px;
+    width: 100%;
+}
+
+.profileRight img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+.profileField {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #2a2a2a;
+    padding: 0.4rem 0.6rem;
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+
+.fieldLabel {
+    flex: 1;
+    font-weight: 500;
+}
+
+.editBtn {
+    padding: 2px 6px;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.saveBtn {
+    padding: 4px 10px;
+    border-radius: 6px;
+    background: linear-gradient(145deg,#3b82ff,#1f6fe0);
+    color: #fff;
+    font-size: 0.85rem;
+}
+
+.cancelBtn {
+    padding: 4px 10px;
+    border-radius: 6px;
+    background: #666;
+    color: #fff;
+    font-size: 0.85rem;
+}

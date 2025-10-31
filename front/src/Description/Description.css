@@ -1,0 +1,43 @@
+/* Description.css */
+.description-dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+
+.description-content {
+    position: relative;
+    background: #222;
+    color: #fff;
+    padding: 4rem;
+    border-radius: 12px;
+    max-width: 40vw ;
+    min-width: 25vw;
+    max-height: 60vh;
+    min-height: 2vh;
+    overflow-y: auto;
+
+    white-space: pre-wrap;  /* сохраняет переносы и переносит длинные строки */
+    word-break: break-word;  /* разрывает слишком длинные слова */
+    overflow-wrap: break-word; /* дополнительная страховка для переноса */
+}
+
+.close-button {
+    position: absolute;  /* привязка к description-content */
+    top: 8px;
+    right: 8px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    line-height: 1;
+}

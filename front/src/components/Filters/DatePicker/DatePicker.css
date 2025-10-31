@@ -1,0 +1,131 @@
+.calendar-btn {
+    font-size: 0.8rem; /* уменьшенный текст */
+    padding: 0.25rem 0.5rem; /* уменьшенные отступы */
+    border: none;
+    border-radius: 6px;
+    background: linear-gradient(145deg, #3b3b3b, #222);
+    color: #fff;
+    box-shadow: 2px 2px 4px #111, -2px -2px 4px #444;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    min-width: 153px;
+}
+
+
+/* Скрываем панель с Today / Presets */
+.rdrDefinedRangesWrapper,
+.rdrMonthAndYearPickers {
+    display: none;
+}
+
+.rdrCalendarWrapper,
+.rdrDateRangeWrapper,
+.rdrMonth,
+.rdrMonthAndYearWrapper,
+.rdrWeekDays,
+.rdrDays {
+    background-color: #222 !important;
+    color: #eee !important;
+}
+
+
+.calendar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+
+.rdrDayNumber span {
+    font-size: 1rem;
+    color: #fff !important; /* активные числа белые */
+}
+
+.rdrDayDisabled span,
+.rdrDayPassive span {
+    color: #888 !important;
+    font-size: 0.8rem; /* неактивные числа серые */
+}
+
+.rdrDayToday .rdrDayNumber span {
+    color: #0ff !important; /* подсветка текущего дня */
+}
+
+.rdrStartEdge,
+.rdrEndEdge,
+.rdrInRange {
+    background-color: #0aa !important;
+}
+
+.rdrMonthAndYearWrapper,
+.rdrMonthName,
+.rdrWeekDays {
+    color: #fff !important; /* белый текст для месяца и года */
+}
+
+
+.rdrMonthPicker select, .rdrYearPicker select {
+    color: #fff !important;
+    background-color: #222 !important;
+}
+
+.rdrDateDisplayWrapper {
+    background: rgba(0, 0, 0, 0.2) !important;
+}
+
+
+.rdrDateDisplayWrapper input {
+    font-size: 1rem !important;
+}
+
+
+.rdrDateDisplayItem {
+    border: 1px solid #555 !important; /* обычный */
+}
+
+.rdrDateDisplayItem.rdrDateDisplayItemActive {
+    border: 1px solid #fff !important; /* активный */
+}
+
+.rdrDateDisplayItem.rdrDateDisplayItemActive {
+    border: 3px solid #0aa !important; /* яркий голубой */
+}
+
+.calendar-content {
+    background: #222;
+    padding: 16px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: scale(0.80);
+    transform-origin: top center;
+    color: #eee;
+}
+
+.calendar-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.calendar-buttons button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    background: #444;
+    color: #fff;
+    cursor: pointer;
+    min-width: 100px;
+}
+
+.calendar-buttons button:hover {
+    background: #666;
+}

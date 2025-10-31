@@ -1,0 +1,32 @@
+{
+  "name": "USOF",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "install": "npm install express cookie-parser jsonwebtoken bcrypt multer mysql2 nodemailer date-fns dotenv cors",
+    "db:init": "mysql -u root -p < ./API/src/backend/sql/init.sql && mysql -u root -p < ./API/src/backend/sql/source.sql",
+    "db:test": "mysql -u root -p --default-character-set=utf8mb4 < ./API/src/backend/sql/testData.sql",
+    "install:dev": "cd API && npm install && cd ../front && npm install",
+    "start:api": "cd API && npm start",
+    "start:front": "cd front && npm run dev",
+    "build": "cd front && npm run build",
+    "start": "node index.js",
+    "start:dev": "concurrently --raw --kill-others-on-fail --success first \"cd API && npm start\" \"cd front && npm run dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "date-fns": "^4.1.0",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.0.2",
+    "mysql2": "^3.15.3",
+    "nodemailer": "^7.0.10"
+  }
+}

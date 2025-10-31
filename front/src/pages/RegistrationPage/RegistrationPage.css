@@ -1,0 +1,12 @@
+
+
+.registration-page {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* форма прижата к верху */
+    padding-top: 4rem;      /* отступ от хедера */
+    min-height: 100vh;
+    background-color: #242424;
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    color: #eee;
+}

@@ -1,0 +1,8 @@
+{
+  "host": "localhost",
+  "user": "q_a_db_admin",
+  "password": "securepass",
+  "database": "q_a_db",
+  "waitForConnections": true,
+  "connectionLimit": 50
+}

@@ -1,0 +1,181 @@
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #121212; /* почти черный */
+    width: 99%;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    min-height: 7.5rem;
+    border-radius: 0.5rem;
+}
+
+.left {
+    display: flex;
+    align-items: normal;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 30vw;
+    justify-content: left;
+    padding-left: 1.5rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    color: #eee;
+    margin: 0;
+    display: flex;
+    min-width: fit-content;
+    white-space: normal;       /* перенос возможен */
+    word-break: break-word;    /* перенос слов при необходимости */
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+}
+
+.menu h4 {
+    margin: 0;
+    cursor: pointer;
+    color: #aaa;
+    transition: color 0.2s;
+}
+
+.menu h4:hover {
+    color: #0f0; /* зеленый акцент */
+}
+
+.right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.center {
+    display: flex;
+    justify-content: flex-end; /* прижимает содержимое к правому краю */
+    width: fit-content;
+    margin-right: 2rem;
+    margin-bottom: 2.6rem;
+}
+
+.userSection {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    min-width: fit-content;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons > * {
+    margin: 0.5rem;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    color: #ddd;
+}
+
+.avatar {
+    width: 60px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 0.2rem;
+}
+
+.username {
+    margin: 0;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+
+.home {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    font-size: 1.5rem; /* увеличенный домик */
+    color: #aaa;
+    border: 1px solid #555; /* тонкий бордер */
+    border-radius: 5px;
+    transition: all 0.2s;
+    margin-right: 0.5rem;
+}
+
+.home:hover {
+    color: #0f0; /* зеленый акцент */
+}
+
+.headerButton {
+    min-width: 90px;           /* одинаковая ширина */
+    padding: 0.4rem 0.8rem;    /* чуть меньше стандартного */
+    font-size: 0.85rem;        /* чуть меньше текста */
+    font-weight: 500;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: #1a1a1a;
+    color: #eee;
+    box-shadow: 1px 2px 5px rgba(0,0,0,0.5);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.headerButton:hover {
+    background-color: #222;
+    box-shadow: 1px 3px 8px rgba(0,0,0,0.7);
+    border-color: #0f0; /* зеленый акцент на hover */
+}
+
+
+.searchInput {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: #1a1a1a;
+    color: #eee;
+    box-shadow: inset 1px 2px 4px rgba(0,0,0,0.5);
+    transition: all 0.2s;
+}
+
+.searchInput:focus {
+    outline: none;
+    border-color: #0f0; /* зелёный акцент */
+    box-shadow: inset 1px 2px 5px rgba(0,0,0,0.7);
+}
+
+.searchButton {
+    margin-top: 1rem;
+    min-width: 90px;
+    padding: 0.35rem 0.8rem;
+    margin-left: 0.2rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: #1a1a1a;
+    color: #eee;
+    box-shadow: 1px 2px 5px rgba(0,0,0,0.5);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.searchButton:hover {
+    background-color: #222;
+    box-shadow: 1px 3px 8px rgba(0,0,0,0.7);
+    border-color: #0f0; /* зелёный акцент */
+}

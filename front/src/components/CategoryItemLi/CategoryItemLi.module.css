@@ -1,0 +1,114 @@
+
+/*.categoryItem {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: space-between; !* текст слева, кнопка справа *!*/
+/*    border: 1px solid #666;*/
+/*    border-radius: 5px;*/
+/*    padding: 0.1rem 0.2rem;*/
+/*    margin: 0.05rem 0;*/
+/*    background: #2a2a2a;*/
+/*    transition: background 0.2s ease;*/
+/*    width: 95%;*/
+/*    position: relative;*/
+
+/*}*/
+
+/*.categoryItem:hover {*/
+/*    background: #333;*/
+/*}*/
+
+
+
+
+/*.categoryItem_title {*/
+/*    display: block;*/
+/*    width: 100%;*/
+/*    font-size: 0.9rem;*/
+/*    word-wrap: break-word;*/
+/*    text-align: left;*/
+/*    padding: 0.3rem 0.5rem;*/
+/*    cursor: help; !* курсор с вопросиком — намекает на описание *!*/
+/*}*/
+
+/*.categoryItem_select {*/
+/*    width: 15px;*/
+/*    height: 15px;*/
+/*    border: none;*/
+/*    border-radius: 60%;*/
+/*    background: linear-gradient(145deg, #3b3b3b, #222);*/
+/*    box-shadow: 2px 2px 4px #111, -2px -2px 4px #444;*/
+/*    cursor: pointer;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    transition: all 0.1s ease-in-out;*/
+/*}*/
+
+/*.categoryItem_select::before {*/
+/*    content: "✔"; !* временная галочка *!*/
+/*    color: #0f0;*/
+/*    font-size: 14px;*/
+/*}*/
+
+/*.categoryItem_select:active {*/
+/*    box-shadow: inset 2px 2px 4px #111, inset -2px -2px 4px #444;*/
+/*    transform: scale(0.95);*/
+/*    border: none;*/
+/*}*/
+
+
+.categoryItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #666;
+    border-radius: 5px;
+    padding: 0.1rem 0.2rem;
+    margin: 0.05rem 0;
+    background: #2a2a2a;
+    transition: background 0.2s ease;
+    width: 95%;
+    position: relative;
+}
+
+.categoryItem:hover {
+    background: #333;
+}
+
+.categoryItem_title {
+    display: block;
+    width: 100%;
+    font-size: 0.9rem;
+    word-wrap: break-word;
+    text-align: left;
+    padding: 0.3rem 0.5rem;
+    cursor: help;
+    color: #ddd;
+}
+
+.categoryItem_select {
+    width: 15px;
+    height: 15px;
+    border: none;
+    border-radius: 60%;
+    background: linear-gradient(145deg, #3b3b3b, #222);
+    box-shadow: 2px 2px 4px #111, -2px -2px 4px #444;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.1s ease-in-out;
+}
+
+.categoryItem_select::before {
+    content: "✔";
+    color: #0f0;
+    font-size: 14px;
+}
+
+.categoryItem_select:active {
+    box-shadow: inset 2px 2px 4px #111, inset -2px -2px 4px #444;
+    transform: scale(0.95);
+    border: none;
+}

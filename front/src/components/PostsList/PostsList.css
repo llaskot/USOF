@@ -1,0 +1,19 @@
+/*.question-list {*/
+/*    list-style: none;*/
+/*    padding: 10px;*/
+/*    margin-top: 0.5rem;*/
+/*    border: 1px solid #ddd;*/
+/*    max-height: 80vh; !* ограничение по высоте окна *!*/
+/*    overflow-y: auto;  !* вертикальный скролл при переполнении *!*/
+/*}*/
+
+
+.question-list {
+    list-style: none;
+    padding: 10px;
+    margin-top: 0.5rem;
+    border: 1px solid #ddd;
+    max-height: 80vh; /* или calc(100vh - offset) */
+    overflow-y: auto;
+    box-sizing: border-box;
+}

@@ -1,0 +1,41 @@
+.home-container {
+    display: flex;
+    height: 100vh; /* вся высота видимой области */
+    padding-bottom: 50px;
+}
+
+.main-content {
+    width: 80%;
+    padding-bottom: 5rem;
+    min-height: 100vh;  /* минимум на всю высоту экрана */
+    overflow-y: visible; /* разрешаем внутреннему элементу скролл */
+    box-sizing: border-box;
+}
+
+.sidebar {
+    width: 20%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    /*overflow-y: auto;*/
+    border-left: 1px solid #444;
+    background: #111;
+    overflow-y: auto;   /* вертикальный скролл */
+    overflow-x: hidden; /* убираем горизонтальный скролл */
+    box-sizing: border-box;
+    padding-right: 6px;
+
+}
+
+.qButton {
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #1a1a1a;
+    color: #eee;
+    padding: 1.5rem 2.5rem;
+    border-radius: 6px;
+    border: 1px solid #333;
+    box-shadow: 1px 2px 5px rgba(0,0,0,0.5);
+    transition: all 0.2s;
+    z-index: 1;
+}
